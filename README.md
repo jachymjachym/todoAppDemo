@@ -14,4 +14,14 @@ yarn install
 installs all packages
 
 ```
-
+gulp build
+```
+builds project to dist folder
+```
+gulp dev
+```
+starts development server and watches file changes
+```
+gulp prod
+```
+builds production version
