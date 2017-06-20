@@ -2,7 +2,7 @@
 @import  'header.less';
 
 .container {
-    max-width: 30em;
+    max-width: 38em;
     margin: 4em auto;
     padding: 0 1em;
     
@@ -42,13 +42,21 @@
         
         li {
             padding: 0 1em;
-            background: url(../images/arrow.png) no-repeat left center;
+            background: url(../images/arrow.png) no-repeat left 0.3em;
             background-size: 0.7em;
             
             span {
                 display: inline-block;
                 margin: 0 0.3em;
                 vertical-align: top;
+                
+                &:first-of-type {
+                    width: 100%;
+                    
+                    @media screen and (min-width: 768px){
+                        width: 70%
+                    }
+                }
                 
                 &.done {
                     text-decoration: line-through;
