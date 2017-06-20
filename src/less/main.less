@@ -1,0 +1,95 @@
+@import  'default.less';
+@import  'header.less';
+
+.container {
+    max-width: 30em;
+    margin: 4em auto;
+    padding: 0 1em;
+    
+    .textAnim {
+        text-align: center;
+        font-size: 3em;
+        margin: 4em 0;
+    }
+    
+    form {
+        input {
+            width: 100%;
+            background: transparent;
+            margin: 1em 0 0;
+            padding: 0.5em 0;
+            font-size: 1.5em;
+        }
+        
+        span {
+            display: block;
+            height: 0.1em;
+            background: #000;
+            width: 0%;
+            transition: width 0.5s ease-out;
+            
+            &.faded {
+                width: 100%;
+                transition: width 0.5s ease-out;
+            }
+        }
+    }
+    
+    ul {
+        font-size: 2.5em;
+        padding: 0;
+        list-style-type: none;
+        
+        li {
+            padding: 0 1em;
+            background: url(../images/arrow.png) no-repeat left center;
+            background-size: 0.7em;
+            
+            span {
+                display: inline-block;
+                margin: 0 0.3em;
+                vertical-align: top;
+                
+                &.done {
+                    text-decoration: line-through;
+                }
+            }
+            
+            .uncheck {
+                background: url(../images/repeatpng.png) no-repeat center center;
+                background-size: contain;
+                width: 1em;
+                height: 1.5em;
+
+            }
+            .check {
+                background: url(../images/check.png) no-repeat center center;
+                background-size: contain;
+                width: 1em;
+                height: 1.5em;
+
+            }
+            .remove {
+                background: url(../images/removepng.png) no-repeat center center;
+                background-size: contain;
+                width: 0.7em;
+                height: 1.5em;
+
+            }
+        }
+        
+        &+ form {
+            input {
+                margin: 1em 0;
+                box-shadow: 0em 0em 1em;
+                padding: 0.5em;
+                box-sizing: border-box;
+                font-size: 1.5em;
+            }
+        }
+    }
+}
+
+.souhrn {
+    display: none;
+}

@@ -1,0 +1,46 @@
+header {
+    > div {
+        overflow: hidden;
+        box-shadow: 0 0 1em #b1b1b1;
+        
+        .h1 {
+            float: left;
+            padding: 1em 1em;
+            text-shadow: 0 0.4em 0.6em #b1b1b1;
+            letter-spacing: .5em;
+            cursor: pointer;
+            font-size: 2em;
+            font-family: 'Economica', sans-serif;
+            font-weight: 600;
+            
+            div {
+                display: inline-block;
+                
+                span {
+                    position: relative;
+                    display: block;
+                    transition: transform 0.2s; 
+                }
+                
+            }
+            
+            .highlight {
+                
+                span {
+                    transform: translateY(-40%);
+                    transition: transform 0.2s;
+                }
+                
+            }
+        }
+        
+        > a,p {
+            float: right;
+            border: none;
+            background: transparent;
+            padding: 1em;
+            font-size: 2em;
+            margin: 0;
+        }
+    }
+}
