@@ -1,4 +1,13 @@
-# nadpis
+# todoApp Demo
+
+this is my react + firebase todo List demo  
+feel free to play with it  
+
+https://jachymjachym.github.io/todoDemo/
+
+Login:  
+test@test.com
+demotest
 
 https://yarnpkg.com/en/docs/install
 it is needed to install yarn package manager
