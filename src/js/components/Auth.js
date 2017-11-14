@@ -18,7 +18,7 @@ class Auth extends React.Component {
     
     
     signUp() {
-        firebase.auth().createUserWithEmailAndPassword('jachymkoudela@seznam.cz', 'sparta77').catch(function(error) {
+        firebase.auth().createUserWithEmailAndPassword(email, password).catch(function(error) {
           // Handle Errors here.
           var errorCode = error.code;
           var errorMessage = error.message;
